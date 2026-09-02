@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Predictor | Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-glow blob-1"></div>
+    <div class="bg-glow blob-2"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Baby Predictor</h1>
+            <p class="subtitle">Discover your future</p>
+        </div>
+        
+        <div class="scene-wrapper">
+            <div class="scene">
+                <div class="cube" id="cube">
+                    <div class="face front boy">
+                        <span class="icon">👦</span>
+                        <span class="label">Boy</span>
+                    </div>
+                    <div class="face right girl">
+                        <span class="icon">👧</span>
+                        <span class="label">Girl</span>
+                    </div>
+                    <div class="face back twins">
+                        <span class="icon">👶👶</span>
+                        <span class="label">Twins</span>
+                    </div>
+                    <div class="face left boy">
+                        <span class="icon">👦</span>
+                        <span class="label">Boy</span>
+                    </div>
+                    <div class="face top girl">
+                        <span class="icon">👧</span>
+                        <span class="label">Girl</span>
+                    </div>
+                    <div class="face bottom twins">
+                        <span class="icon">👶👶</span>
+                        <span class="label">Twins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="rollBtn" class="premium-btn">
+            <span>Roll the Dice</span>
+        </button>
+        
+        <div class="result-container">
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

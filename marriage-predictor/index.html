@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destiny Marriage Predictor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Marriage Predictor</h1>
+            <p class="subtitle">Is it written in the stars?</p>
+        </div>
+        
+        <form id="predictorForm" class="cards-wrapper">
+            <!-- Person 1 -->
+            <div class="person-card">
+                <h2>Person 1</h2>
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" id="name1" required placeholder="Enter name">
+                </div>
+                <div class="input-group">
+                    <label>Date of Birth</label>
+                    <input type="date" id="dob1" required>
+                </div>
+                <div class="input-group">
+                    <label>Time of Birth</label>
+                    <input type="time" id="time1" required>
+                </div>
+            </div>
+            
+            <div class="heart-divider">
+                <div class="heart">❤️</div>
+            </div>
+            
+            <!-- Person 2 -->
+            <div class="person-card">
+                <h2>Person 2</h2>
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" id="name2" required placeholder="Enter name">
+                </div>
+                <div class="input-group">
+                    <label>Date of Birth</label>
+                    <input type="date" id="dob2" required>
+                </div>
+                <div class="input-group">
+                    <label>Time of Birth</label>
+                    <input type="time" id="time2" required>
+                </div>
+            </div>
+            
+            <div class="action-section">
+                <button type="submit" class="premium-btn">Check Destiny</button>
+            </div>
+        </form>
+
+        <!-- Result Section -->
+        <div id="resultSection" class="result-section hidden">
+            <div class="match-circle">
+                <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="45"></circle>
+                    <circle class="progress" cx="50" cy="50" r="45" id="progressCircle"></circle>
+                </svg>
+                <div class="percentage" id="percentageText">0%</div>
+            </div>
+            <h3 id="verdictText">Calculating...</h3>
+            <p id="descriptionText" class="desc-text"></p>
+            <button type="button" id="resetBtn" class="reset-btn">Try Another</button>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
